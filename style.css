@@ -1,0 +1,70 @@
+* {
+    min-width: 0px;
+}
+
+:root {
+    --primary-colour: rgb(75, 150, 160);
+    --secondary-colour: rgb(15, 30, 32);
+    --text-colour: rgb(180, 210, 210);
+    --shadow-colour: rgb(12, 14, 14);
+}
+
+body, nav, label {
+    align-items: center;
+    text-align: center;
+}
+
+article, aside {
+    margin: 1em;
+    border: 0.25em double var(--primary-colour);
+}
+
+nav, aside {
+    width: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--secondary-colour);
+
+    color: var(--text-colour);
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+article {
+    max-width: 65em;
+    padding: 2em;
+
+    text-align: left;
+}
+
+aside {
+    flex-grow: 1;
+    padding: 2em;
+
+    text-align: center;
+} 
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width: auto;
+    }
+    
+}
+
+p {
+    padding: 0.5em;
+}
+
+.subtext {
+    text-indent: none;
+}
