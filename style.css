@@ -20,7 +20,7 @@ article, aside {
 }
 
 nav, aside {
-    width: 10vh;
+    width: 5em;
     display: flex;
     flex-flow: row wrap;
 }
@@ -61,8 +61,20 @@ aside {
     
 }
 
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
 p {
     padding: 0.5em;
+
+}
+
+img {
+    padding: 1.25em;
 }
 
 .subtext {
