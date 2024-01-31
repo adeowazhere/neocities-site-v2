@@ -20,9 +20,17 @@ article, aside {
 }
 
 nav, aside {
-    width: 5em;
+    width: 5vw;
+    height: fit-content;
     display: flex;
     flex-flow: row wrap;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -41,7 +49,7 @@ main {
 }
 
 article {
-    max-width: 65em;
+    max-width: 75vw;
     padding: 2em;
 
     text-align: left;
@@ -58,23 +66,37 @@ aside {
     nav {
         width: auto;
     }
+
+    img {
+        float: none !important;
+    }
+
+    section {
+        flex-flow: column;
+    }
     
 }
 
 section {
     display: flex;
-    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
 }
 
 p {
+    font-size: 1.325em;
     padding: 0.5em;
 
 }
 
 img {
+    flex-shrink: 0;
+    width: 25em;
     padding: 1.25em;
+
+    object-fit: contain;
+    filter: sepia(1) brightness(85%) contrast(100%) saturate(115%) hue-rotate(135deg);
+    transition: max-width 1s;
 }
 
 .subtext {
