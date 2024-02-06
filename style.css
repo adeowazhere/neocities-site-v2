@@ -15,7 +15,8 @@ body {
     align-items: center;
     text-align: center;
 
-    background-color: var(--secondary-colour);
+    background: url(/images/test_bg-min.png) center fixed;
+    background-size: cover;
 
     color: var(--text-colour);
 }
@@ -71,13 +72,17 @@ article {
     box-shadow: 0.75em 0.75em 0.5em var(--shadow-colour);
 }
 
+article, aside {
+    background-color: var(--secondary-colour);
+}
+
 section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-p {
+p, label {
     font-size: 1.5em;
     padding: 0.5em;
 
@@ -98,6 +103,10 @@ h1 {
     font-weight: bold;
 }
 
+#header-heading {
+    margin: 0px;
+}
+
 img {
     flex-shrink: 0;
     max-width: 100%;
@@ -105,7 +114,7 @@ img {
     object-fit: contain;
 
     filter: sepia(1) brightness(85%) contrast(100%) saturate(115%) hue-rotate(135deg);
-    transition: all 0.175s;
+    transition: all 0.25s;
 
     border: 0.125em dotted var(--primary-colour);
     box-shadow: 0.625em 0.625em 0.25em var(--shadow-colour);
