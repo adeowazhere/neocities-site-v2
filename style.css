@@ -7,6 +7,7 @@
     --secondary-colour: rgb(15, 30, 32);
     --text-colour: rgb(180, 210, 210);
     --shadow-colour: rgb(10, 12, 14);
+    --transparent: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -26,6 +27,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    width: 25vw;
+
+    background: radial-gradient(var(--secondary-colour), var(--transparent) 75%);
 }
 
 main {
@@ -98,7 +103,7 @@ label {
 }
 
 h1 {
-    font-size: 3.125em;
+    font-size: 4.25em;
     font-style: normal;
     font-weight: bold;
 }
