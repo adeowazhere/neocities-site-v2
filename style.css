@@ -30,7 +30,7 @@ header {
 
     width: 25vw;
 
-    background: radial-gradient(var(--secondary-colour), var(--transparent) 75%);
+    background: radial-gradient(var(--shadow-colour), var(--transparent) 75%);
 }
 
 main {
@@ -78,7 +78,7 @@ article {
 }
 
 article, aside {
-    background-color: var(--secondary-colour);
+    background: linear-gradient(black, var(--secondary-colour) 90%);
 }
 
 section {
@@ -91,7 +91,7 @@ p, label {
     font-size: 1.5em;
     padding: 0.5em;
 
-    text-shadow: 0.0625em 0.0625em 0.1em var(--primary-colour);
+    text-shadow: 0.0625em 0.0625em 0.075em var(--primary-colour);
 }
 
 label {
@@ -106,6 +106,40 @@ h1 {
     font-size: 4.25em;
     font-style: normal;
     font-weight: bold;
+}
+
+#sub-headers {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+
+    width: 5em;
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 4.75em;
+}
+
+#links-header {
+    top: -3.75em;
+    left: -3.5em;
+    rotate: -20deg;
+}
+
+#hey-hey-header {
+    top: -0.5em;
+    left: 7.5em;
+    rotate: 10deg;
+}
+
+#about-me-header {
+    top: 3.5em;
+    left: -0.25em;
+    rotate: -5deg;
 }
 
 #header-heading {
