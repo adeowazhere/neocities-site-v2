@@ -115,12 +115,19 @@ section {
     justify-content: center;
 }
 
-p, label {
+p, label, a {
     font-family: DTM Mono;
     font-size: 1.5em;
     padding: 0.5em;
 
+    color: var(--text-colour);
+
     text-shadow: 0.0625em 0.0625em 0.075em var(--primary-colour);
+}
+
+a:has(img) {
+    margin: 0px;
+    padding: 0px;
 }
 
 label {
@@ -144,8 +151,8 @@ h2 {
 }
 
 .sub-headers-for-desktop {
-    width: 0px !important;
-    height: 0px !important;
+    width: 0px;
+    height: 0px;
 }
 
 .sub-headers-for-desktop h2 {
@@ -177,18 +184,18 @@ h2:hover {
 
 #links-header {
     top: -1.5em;
-    left: -3.5em;
+    left: -4em;
     rotate: -15deg;
 }
 
 #hey-hey-header {
     top: -0.5em;
-    left: 7.5em;
+    right: -7.5em;
     rotate: 7.5deg;
 }
 
 #about-me-header {
-    top: 5.75em;
+    top: 5.5em;
     left: -0.25em;
     rotate: -5deg;
 }
@@ -199,7 +206,7 @@ h2:hover {
 
 img {
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: 30em;
     margin: 2.5em;
     object-fit: contain;
 
@@ -223,7 +230,7 @@ img:hover {
     
 }
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1211px) {
     nav {
         width: auto;
     }
