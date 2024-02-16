@@ -209,6 +209,11 @@ h2:hover {
     rotate: -5deg;
 }
 
+#manga-header {
+    top: -0.75em;
+    rotate: -5deg;
+}
+
 #header-heading {
     margin: 0px;
 }
