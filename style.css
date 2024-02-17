@@ -137,6 +137,11 @@ h2:hover {
     rotate: 5deg;
 }
 
+#blogs-header {
+    top: -1em;
+    rotate: -5deg;
+}
+
 #header-heading {
     margin: 0px;
 }
