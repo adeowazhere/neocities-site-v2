@@ -77,6 +77,13 @@ h3 {
     text-align: center;
 }
 
+h3 a {
+    margin: 0.25em;
+
+    font: 0.75em DTM Mono;
+    text-align: center;
+}
+
 .sub-headers-for-desktop {
     width: 75vw;
     height: 0px;
