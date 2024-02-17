@@ -131,6 +131,12 @@ h2:hover {
     rotate: -5deg;
 }
 
+#videos-header {
+    top: -0.75em;
+    right: -11.25em;
+    rotate: 5deg;
+}
+
 #header-heading {
     margin: 0px;
 }
@@ -200,6 +206,11 @@ p, label, a {
     color: var(--text-colour);
 
     text-shadow: 0.0625em 0.0625em 0.075em var(--primary-colour);
+}
+
+p > a {
+    padding: 0px;
+    font-size: 1.125em;
 }
 
 label {
