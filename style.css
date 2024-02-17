@@ -55,112 +55,30 @@ header {
     background: radial-gradient(var(--shadow-colour), var(--transparent) 75%);
 }
 
-main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-#buttons-and-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-aside img{
-    width: 6.5em;
-    padding: 0px;
-    margin: 0px;
-}
-
-nav {
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 1;
-    align-items: center;
-
-    width: 6.5vw;
-    height: fit-content;
-    margin: 1em;
-    padding: 2em;
-
-    text-align: center;
-
-    border: 0.25em double var(--primary-colour);
-    box-shadow: 0.75em 0.75em 0.5em var(--shadow-colour);
-}
-
-nav p, nav a {
-    font-size: 1.25em;
-}
-
-article {
-    max-width: 75vw;
-    margin: 1em;
-    padding: 2em;
-
-    text-align: left;
-
-    border: 0.25em double var(--primary-colour);
-    box-shadow: 0.75em 0.75em 0.5em var(--shadow-colour);
-}
-
-article, nav {
-    background: linear-gradient(black, var(--secondary-colour) 90%);
-}
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-p, label, a {
-    font-family: DTM Mono;
-    font-size: 1.5em;
-    padding: 0.5em;
-
-    color: var(--text-colour);
-
-    text-shadow: 0.0625em 0.0625em 0.075em var(--primary-colour);
-}
-
-a:has(img) {
-    margin: 0px;
-    padding: 0px;
-}
-
-label {
-    align-items: center;
-
-    text-align: center;
-    font-size: 0.9em;
-    font-style: italic;
-}
-
 h1 {
-    font-family: DTM Mono;
-    font-size: 4.25em;
-    font-style: normal;
-    font-weight: bold;
+    font: normal bold 4.25em DTM Mono;
 }
 
 h2 {
     font-family: DLTRN Mono;
+
+    margin: 0px;
+    padding: 0px;
+    
     z-index: 999;
+
+    transition: font-size 0.25s;
 }
 
 h3 {
     margin: 0.25em;
 
+    font: 2.5em DTM Mono;
     text-align: center;
-    font-family: DTM Mono;
-    font-size: 2.5em;
 }
 
 .sub-headers-for-desktop {
-    max-width: 75vw;
+    width: 75vw;
     height: 0px;
 }
 
@@ -169,22 +87,14 @@ h3 {
     position: relative;
 
     width: 6em;
-    margin: 0px;
-    padding: 0px;
 
     font-size: 4em;
-
-    transition: font-size 0.25s;
 }
 
 .sub-headers-for-mobile {
     display: none;
-    margin: 0px;
-    padding: 0px;
 
     font-size: 3.75em;
-
-    transition: font-size 0.25s;
 }
 
 h2:hover {
@@ -204,7 +114,7 @@ h2:hover {
 }
 
 #about-me-header {
-    top: 5.5em;
+    top: -0.5em;
     left: -0.25em;
     rotate: -5deg;
 }
@@ -218,6 +128,80 @@ h2:hover {
     margin: 0px;
 }
 
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.5vw;
+    margin: 1em;
+    padding: 2em;
+
+    text-align: center;
+}
+
+nav a, nav p {
+    font-size: 1.35em;
+}
+
+#buttons-and-images {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons-and-images * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#buttons-and-images img{
+    width: 6.25em;
+}
+
+article {
+    max-width: 75vw;
+    margin: 1em;
+    padding: 2em;
+
+    text-align: left;
+}
+
+article, nav {
+    background: linear-gradient(black, var(--secondary-colour) 90%);
+
+    border: 0.25em double var(--primary-colour);
+    box-shadow: 0.75em 0.75em 0.5em var(--shadow-colour);
+}
+
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+p, label, a {
+    font: 1.5em DTM Mono;
+    padding: 0.5em;
+
+    color: var(--text-colour);
+
+    text-shadow: 0.0625em 0.0625em 0.075em var(--primary-colour);
+}
+
+label {
+    align-items: center;
+
+    text-align: center;
+    font: italic 0.9em DTM Mono;
+}
+
 section img {
     width: 100%;
     height: 100%;
@@ -225,8 +209,10 @@ section img {
 
 img {
     flex-shrink: 0;
+    
     max-width: 30em;
     margin: 2.5em;
+    
     object-fit: contain;
 
     filter: sepia(1) brightness(85%) contrast(100%) saturate(115%) hue-rotate(135deg);
@@ -252,6 +238,7 @@ img:hover {
 @media only screen and (max-width: 1211px) {
     nav {
         width: auto;
+        flex-flow: row wrap;
     }
 
     #buttons-and-images {
