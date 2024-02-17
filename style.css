@@ -24,6 +24,22 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px)
+    } 50% {
+        transform: translateY(-0.1em);
+    }
+}
+
 :root {
     --primary-colour: rgb(75, 150, 160);
     --secondary-colour: rgb(15, 30, 32);
@@ -66,8 +82,6 @@ h2 {
     padding: 0px;
     
     z-index: 999;
-
-    transition: font-size 0.25s;
 }
 
 h3 {
@@ -105,41 +119,53 @@ h3 a {
 }
 
 h2:hover {
-    font-size: 4.125em;
+    font-size: 4.25em;
 }
 
 #links-header {
     top: -1.5em;
     left: -4em;
     rotate: -15deg;
+
+    animation: float 4.25s infinite;
 }
 
 #hey-hey-header {
     top: -0.5em;
     right: -7.5em;
     rotate: 7.5deg;
+
+    animation: float 5s infinite;
 }
 
 #about-me-header {
     top: -0.5em;
     left: -0.25em;
     rotate: -5deg;
+
+    animation: float 5.5s infinite;
 }
 
 #manga-header {
     top: -0.75em;
     rotate: -5deg;
+
+    animation: float 5s infinite;
 }
 
 #videos-header {
     top: -0.75em;
     right: -11.25em;
     rotate: 5deg;
+
+    animation: float 5s infinite;
 }
 
 #blogs-header {
     top: -1em;
     rotate: -5deg;
+
+    animation: float 5s infinite;
 }
 
 #header-heading {
@@ -202,6 +228,10 @@ section {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+}
+
+p, #buttons-and-images, nav a {
+    animation: fadeIn 1.5s forwards;
 }
 
 p, label, a {
