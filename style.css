@@ -146,6 +146,14 @@ h2:hover {
     animation: float 5.5s infinite;
 }
 
+#updates-header {
+    top: -0.425em;
+    right: -10em;
+    rotate: 2.5deg;
+
+    animation: float 6s infinite;
+}
+
 #manga-header {
     top: -0.75em;
     rotate: -5deg;
