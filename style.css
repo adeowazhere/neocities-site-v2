@@ -288,6 +288,25 @@ img:hover {
     animation: jingle 0.375s forwards;
 }
 
+#blog-main {
+    width: 75vw;
+}
+
+.blog-section {
+    flex-direction: column;
+}
+
+.blog-link {
+    flex-direction: column;
+    padding: 1em;
+
+    border: 0.125em solid var(--primary-colour);
+}
+
+.blog-link * {
+    margin: 0px;
+}
+
 
 @media only screen and (max-width: 820px) {
     img {
