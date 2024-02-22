@@ -154,6 +154,14 @@ h2:hover {
     animation: float 6s infinite;
 }
 
+#contact-me-header {
+    width: 6.125em;
+    top: -0.25em;
+    rotate: -2.5deg;
+
+    animation: float 4s infinite;
+}
+
 #manga-header {
     top: -0.75em;
     rotate: -5deg;
