@@ -277,7 +277,7 @@ section img {
     height: 100%;
 }
 
-img {
+img, iframe {
     flex-shrink: 0;
     
     max-width: 30em;
@@ -292,7 +292,7 @@ img {
     box-shadow: 0.625em 0.625em 0.25em var(--shadow-colour);
 }
 
-img:hover {
+img:hover, iframe:hover {
     filter: sepia(0) brightness(100%) contrast(100%) saturate(100%) hue-rotate(0deg);
     animation: jingle 0.375s forwards;
 }
