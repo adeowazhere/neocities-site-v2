@@ -308,6 +308,7 @@ img:hover, iframe:hover {
 .blog-link {
     flex-direction: column;
     padding: 1em;
+    margin: 2.25em 1em;
 
     border: 0.125em solid var(--primary-colour);
 }
