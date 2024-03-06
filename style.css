@@ -212,12 +212,12 @@ nav a, nav p {
     font-size: 1.35em;
 }
 
-#buttons-and-images {
+#buttons-and-images, #etc-gifs {
     display: flex;
     flex-direction: column;
 }
 
-#buttons-and-images * {
+#buttons-and-images *, #etc-gifs * {
     margin: 0px;
     padding: 0px;
 }
@@ -323,7 +323,7 @@ img:hover, iframe:hover {
         flex-flow: row wrap;
     }
 
-    #buttons-and-images {
+    #buttons-and-images, #etc-gifs {
         justify-content: center;
         flex-flow: row wrap;
     }
