@@ -55,7 +55,7 @@ body {
     text-align: center;
 
     background-color: var(--secondary-colour);
-    background: url(https://cdn.discordapp.com/attachments/1102951599955005520/1210144978559311902/test_bg-min.png?ex=65e97e56&is=65d70956&hm=0a412401ecb8e0632e934431939afc555d3374d74d891439915d50f46227180e&) center fixed;
+    background: url(/images/test_bg-min.png) center fixed;
     background-size: cover;
 
     color: var(--text-colour);
